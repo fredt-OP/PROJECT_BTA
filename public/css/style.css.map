@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "ACGA,yBAAyB;AACzB;;;;;;kBAMkB;ADJlB,OAAO,CAAC,sKAAI;AACZ,YAAY",
+    "sources": [
+        "../../sass/style.scss",
+        "../../sass/Utils/_variables.scss",
+        "../../sass/Utils/_functions.scss",
+        "../../sass/Utils/_extensions.scss",
+        "../../sass/Utils/_mixins.scss",
+        "../../sass/Utils/animations.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
