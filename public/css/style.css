@@ -4,20 +4,16 @@ body {
   margin: 0 auto;
 }
 
-header {
-  background-color: #FFF;
-  background-image: url(/images/textureTapisDeBillard.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+header .background {
   width: 100%;
-  margin: 0;
+  height: 150px;
+  object-fit: cover;
+  position: relative;
 }
 
 header .title {
+  position: absolute;
+  top: 30px;
   color: #FFF;
   /*text-shadow: 16px;*/
   display: flex;
@@ -184,7 +180,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: chocolate;
+  background-color: #548235;
 }
 
 footer .icons {
