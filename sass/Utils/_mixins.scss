@@ -1,4 +1,23 @@
+/*titre*/
 
+@mixin title {
+    display: flex;
+    justify-content: center;
+    h2 {
+      border: 1px solid $secondary;
+      color: $white;
+      background-color: $green;
+      border-radius: 1em;
+      padding: 0.7em;
+        
+  }
+}
+
+/*centrer*/
+@mixin flex-center {
+    display:flex;
+    justify-content: center;
+}
 
 
 
