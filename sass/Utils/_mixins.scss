@@ -1,25 +1,35 @@
-/*titre*/
+/*titres*/
 
 @mixin title {
-    display: flex;
-    justify-content: center;
-    h2 {
-      border: 1px solid $secondary;
-      color: $white;
-      background-color: $green;
-      border-radius: 1em;
-      padding: 0.7em;
+  display: flex;
+  justify-content: center;
+  margin:1em;
+  h2 {
+  border: 1px solid $secondary;
+  color: $white;
+  background-color: $green;
+  border-radius: 1em;
+  box-shadow: 0px 4px 8px 0px #00000020;
+  padding: 0.3em;
+  text-align: center;
+  width:90%;
         
   }
 }
 
 /*centrer*/
 @mixin flex-center {
-    display:flex;
-    justify-content: center;
+  display:flex;
+  justify-content: center;
 }
 
 
-
+/*décoration du texte*/
+@mixin deco-text {
+  width:80%;
+  border: 1px solid $secondary;
+  border-radius: 0.5em;
+  padding: 1em;
+}
 
 

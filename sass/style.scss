@@ -11,9 +11,12 @@ body {
     margin: 0 auto;
 }
 header {
+    display: flex;
+    justify-content: center;
+    height:180px;
     .background {
         width:100%;
-        height: 150px;
+        height: 180px;
         object-fit: cover;
         position:relative;
     }
@@ -21,12 +24,15 @@ header {
         position:absolute;
         top:30px;
         color: $white;
-        /*text-shadow: 16px;*/
+        text-align: center;
         display: flex;
-        justify-content: space-around;
-        width:100%;
+        justify-content: center;
+        width:80%;
         align-items: center;
         font-size: 20px;
+        border : 2px solid;
+        
+        
     }   
 }
 main {
@@ -50,51 +56,14 @@ main {
             }
         }
     }
-    /*background-color:$grey;*/
+    
     .construct {
         width:100%;
         display: flex;
         justify-content: center;
-
-    }
-    .float {
-        background-color: $secondary;
-        width:150px;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        position:fixed;
-        border-radius: 1em;
-        margin: 1em;
-        cursor:pointer;
         
-        transform: translateX(-162px);
-        &:hover {
-            transition-duration: 800ms;
-            transform: translateX(0px);
-        }
-        .pointer {
-            width: 16px;
-             height: 32px;
-            background-color: $secondary;
-            clip-path: polygon(0 0, 0 100%, 100% 50%);
-            position:absolute;
-            top:40px;
-            right:-16px;
-        }
-            
-        ul {
-           
-            padding:0;
-            li {
-                list-style: none;
-                text-decoration: none;
-                color:$white;
-                margin: 1em;
-                cursor:pointer;
-            }
-        }
     }
+    
     .title{
         margin-top: 1em;
         display: flex;
@@ -102,16 +71,17 @@ main {
         align-items: center;
         .divImg {
             width:80%;
+            max-width: 400px;
             
             .imgHall {
                 object-fit: cover;
                 width:100%;
-                  
+                
             }
             .imgSalle {
                 width:100%;
                 object-fit: cover;
-                 
+                
             }
         }
         .textBienvenue {
@@ -151,35 +121,41 @@ main {
         padding: 0.5em;
         margin: 2em;
     }
-    .important {
-        @include flex-center;
-        .message {
-            text-align: center;
-            font-size: 25px;
-            font-weight: bold;
-            background-color: $secondary;
-            width:100%;
-            border: 2px solid $green;
-            border-radius: 1em;
-            margin: 1em;
-            padding:1em;
-
+    .actus {
+        @include title;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .important {
+            @include flex-center;
+            .message {
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: $secondary;
+                width:100%;
+                border: 2px solid $green;
+                border-radius: 1em;
+                margin: 1em;
+                padding:1em;
+            
+            }
         }
-    }
-    .news {
-        @include flex-center;
-        
-        .actu {
-            width: 300px;
-            height: 500px;
-            cursor: pointer;
-            &:hover {
-                -webkit-transform:scale(2); /* Safari et Chrome */
-                -moz-transform:scale(2); /* Firefox */
-                -ms-transform:scale(2); /* Internet Explorer 9 */
-                -o-transform:scale(2); /* Opera */
-                transform:scale(2);;
-            } 
+        .news {
+            @include flex-center;
+            
+            .actu {
+                width: 300px;
+                height: 500px;
+                cursor: pointer;
+                &:hover {
+                    -webkit-transform:scale(2); /* Safari et Chrome */
+                    -moz-transform:scale(2); /* Firefox */
+                    -ms-transform:scale(2); /* Internet Explorer 9 */
+                    -o-transform:scale(2); /* Opera */
+                    transform:scale(2);;
+                } 
+            }
         }
     }
     .presentation {
@@ -187,27 +163,19 @@ main {
         display:flex;
         flex-direction: column;
         align-items: center;
-        h2 {
-            text-align: center;
-            width:90%;
-
-        }
+        
         .flex-around {
             display:flex;
             flex-direction: column;
             align-items: center;
-            
             img {
-                width: 70%;
-                height: 400px;
+                width: 150px;
+                height: 200px;
             }
             .association {
-                width:80%;
-                border: 1px solid $secondary;
-                border-radius: 0.5em;
-                padding: 1em;
-
-
+                @include deco-text;
+                
+                
             }
         }
     }
@@ -216,19 +184,108 @@ main {
         display:flex;
         flex-direction: column;
         align-items: center;
-        h2 {
-            text-align: center;
-            width:90%;
-
+        .flex-col {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                margin-top: 1em;
+                margin-bottom: 2em;
+            }
+            .parag {
+                @include deco-text;
+            }
+        }
+    }
+    .partners {
+        @include title;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .block {
+            @include deco-text;
+            margin:1em;
+            p {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                
+            }
+            .instit {
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                img {
+                    width: 180px;
+                    margin: 1em
+                }
+            }
+            .sponsors{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                img {
+                    width: 150px;
+                    margin: 1em
+                }
+            }
+        }
+    }
+    .disciplines {
+        @include title;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            color: $green;
+            background-color: $secondary;
+            
+        }
+        .carambole {
+            @include deco-text;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1.5em;
+            p {
+                font-size: 17px;
+            }
+            img {
+                width:200px;
+            }
+        }
+        .blackball {
+            @include deco-text;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                font-size: 17px;
+            }
+            img {
+                width:200px;   
+            }
         }
     }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 900px) {
+    body {
+
+    
+        header {
+            .title {
+                h2 {
+                font-size: 5px;
+
+            }
+        }
+    }
     main {
         .title{
             display:flex;
             flex-direction: row;
             justify-content: space-between;
+            margin: 0 2em;
             .divImg {
                 width:30%;
                 height:100%;
@@ -237,24 +294,47 @@ main {
                 width:33%;
                 height:100%;
             }
-
+            
         }
         .presentation {
             .flex-around {
                 justify-content: space-around;
                 flex-direction: row;
+                margin: 0 5em;
                 img {
-                    width: 20%;
-                    height: 300px;
+                    width: 150px;
+                    height: 200px;
+                    margin:1em;
                 }
                 .association {
                     width:50%;
                 }
             }
         }
+        .partners {
+            .block {
+                .instit, .sponsors {
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    img {
+                        width: 150px;
+                    }
+                    
+                }
+            }
+        }
+        .disciplines {
+            .carambole, .blackball {
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+        }
     }
 }
-
+}
 
 
 footer {
