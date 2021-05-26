@@ -379,45 +379,42 @@ main .disciplines .blackball img {
 }
 
 @media screen and (min-width: 900px) {
-  body header .title h2 {
-    font-size: 5px;
-  }
-  body main .title {
+  main .title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 2em;
   }
-  body main .title .divImg {
+  main .title .divImg {
     width: 30%;
     height: 100%;
   }
-  body main .title .textBienvenue {
+  main .title .textBienvenue {
     width: 33%;
     height: 100%;
   }
-  body main .presentation .flex-around {
+  main .presentation .flex-around {
     justify-content: space-around;
     flex-direction: row;
     margin: 0 5em;
   }
-  body main .presentation .flex-around img {
+  main .presentation .flex-around img {
     width: 150px;
     height: 200px;
     margin: 1em;
   }
-  body main .presentation .flex-around .association {
+  main .presentation .flex-around .association {
     width: 50%;
   }
-  body main .partners .block .instit, body main .partners .block .sponsors {
+  main .partners .block .instit, main .partners .block .sponsors {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  body main .partners .block .instit img, body main .partners .block .sponsors img {
+  main .partners .block .instit img, main .partners .block .sponsors img {
     width: 150px;
   }
-  body main .disciplines .carambole, body main .disciplines .blackball {
+  main .disciplines .carambole, main .disciplines .blackball {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
