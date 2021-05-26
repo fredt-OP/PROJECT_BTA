@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="public/css/style.css" /> <!-- ceci est le lien vers mon fichier css -->
         <link href="fontAwesome/css/all.min.css" rel="stylesheet">
         <link rel = "preconnect" href = "https://fonts.gstatic.com">
-		<title>Billard Troyes Agglo</title> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <title>Billard Troyes Agglo</title> 
     </head>
 
     <body>
@@ -21,21 +22,36 @@
             <div class=title>
                 <h2>BILLARD TROYES AGGLO</h2>
             </div>
-            
-        </Header>
-        <!-- main -->
-        <main>
-            <nav>
+            <div class="toggle-wrapper">
+                <div class= "toggle-button" id = "toggle-button">Menu</div>
+                <div class="toggle-menu" id = "toggle-menu">
+                  <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="leclub.html">LE CLUB</a></li>
+                    <li><a href=animations.html>ANIMATIONS</a></li>
+                    <li><a href="adhesion.html">ADHESION</a></li>
+                    <li><a href="calendrier.html">CALENDRIER</a></li>
+                    <li><a href="tournoi_dep&rep.html">TOURNOIS DÉP.&RÉG</a></li>
+                    <li><a href="tournois_nationaux.html">TOURNOIS NATIONAUX</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                  </ul>
+                </div>
+            </div>
+            <nav class=nav>
                     <a class="accueil" href="index.html">ACCUEIL</a>
                     <a class= "club" href=leclub.html>LE CLUB</a>
-                    <a class= "club" href=animations.html>ANIMATIONS</a>
-                    <a class= "club" href=adhésion.html>ADHÉSION</a>
+                    <a class= "animations" href=animations.html>ANIMATIONS</a>
+                    <a class= "adhesion" href=adhesion.html>ADHÉSION</a>
                     <a class="calendrier" href="calendrier.html">CALENDRIER</a>
                     <a class="tournois1" href="tournoi_dep&rep.html">TOURNOIS DÉP.&RÉG</a>
                     <a class="tournois2" href="tournois_nationaux.html">TOURNOIS NATIONAUX</a>
                     <a class=contact"" href="contact.html">CONTACT</a>
                 
             </nav>
+            
+        </Header>
+        <!-- main -->
+        <main>
             
             <section class=title>
                 <div class="divImg">
@@ -124,6 +140,7 @@
                 <h3>
                     <p>Sur les différentes disciplines que comporte le billard, LE CARAMBOLE et LE BLACKBALL sont les deux principales.</p>
                 </h3>
+                <div class=dissip>
                 <div class="carambole">
                     <p>Le « <strong>CARAMBOLE</strong>  » ou « <strong>billard FRANCAIS</strong> » se distingue de manière fondamentale des jeux de billards à poches que sont le billard américain ou ses cousins anglo-saxons le blackball et le snooker. Il se joue avec 3 billes : une blanche, une blanche « pointée » (pour la distinguer de l’autre) et une rouge. Un joueur joue avec la blanche et son adversaire avec la blanche « pointée ».</p>
                     <img src="images/boulesFrancais.jpg" alt="">
@@ -138,6 +155,7 @@
                     <p>Le joueur doit toujours toucher en premier une bille de son groupe. Si un joueur empoche correctement une bille, il continue à jouer jusqu’à ce qu’il manque, commette une faute ou qu’il gagne ! en empochant la noire numérotée 8 après toutes les billes de son groupe.</p>
                     <p>(Plus de détails dans la rubrique LE BLACKBALL)</p>
 
+                </div>
                 </div>
                 <h3>
                     <p>LE B.T.A. PERMET DE PRATIQUER LE CARAMBOLE ET LE BLACKBALL</p>
@@ -155,5 +173,6 @@
         
             <a class="contact" href="contact.html">Contact</a>    
         </footer>
+        <script type="text/javascript" src="Js/menu.js"></script>
     </body>
 </html>

@@ -16,7 +16,7 @@ header {
     height:180px;
     .background {
         width:100%;
-        height: 180px;
+        height: 150px;
         object-fit: cover;
         position:relative;
     }
@@ -30,32 +30,52 @@ header {
         width:80%;
         align-items: center;
         font-size: 20px;
-        border : 2px solid;
+        /*border : 2px solid;*/
         
         
-    }   
-}
-main {
-    nav {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;        
-        a {
-            margin: 0.5em;
+    }
+    .toggle-wrapper {
+
+        position:absolute;
+        top: 125px;
+        .toggle-button {
+            background: $secondary;
+            color: white;
+            text-align: center;
+            border-radius: 100%;
+            padding:15px 5px;
+            display: block;
             cursor: pointer;
-            border: 1px solid red;
-            border-radius: 0.5em;
-            background-color: $green;
-            color: $white;
-            padding: 0.5em;
-            cursor: pointer;
-            text-decoration: none;
-            &:hover {
-                color:$secondary;
+          }
+        .toggle-menu {
+            display: none;
+            ul{
+              list-style: none;
+              li {
+                  text-align: center;
+                  border-top: 1px solid #1e1e1e;
+                  a {
+                    text-decoration: none;
+                    color: $secondary;
+                    background: $green;
+                    display: block;
+                    padding: 10px 0;
+                    &:hover {
+                        color: $green;
+                        background: $secondary;
+
+                    }
+                  }
+                }
             }
         }
     }
+    nav {
+        
+        display:none;
+    }    
+}
+main {
     
     .construct {
         width:100%;
@@ -255,34 +275,81 @@ main {
             background-color: $secondary;
             
         }
-        .carambole {
-            @include deco-text;
+        .dissip {
             display:flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 1.5em;
-            p {
-                font-size: 17px;
+            .carambole {
+                @include deco-text;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 1.5em;
+                p {
+                    font-size: 17px;
+                }
+                img {
+                    width:200px;
+                }
             }
-            img {
-                width:200px;
-            }
-        }
-        .blackball {
-            @include deco-text;
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            p {
-                font-size: 17px;
-            }
-            img {
-                width:200px; 
+            .blackball {
+                @include deco-text;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    font-size: 17px;
+                }
+                img {
+                    width:200px; 
+                }
             }
         }
     }
 }
 @media screen and (min-width: 900px) {
+    header {
+        height:250px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .background {
+            width:100%;
+            height: 250px;
+            object-fit: cover;
+            position:relative;
+        }
+        .toggle-wrapper{
+            display:none;
+        }
+        nav {
+            /*display:box;*/
+            /*display: contents;*/
+            visibility: visible;
+            position: absolute;
+            top: 130px;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;        
+            a {
+                margin: 0.5em;
+                cursor: pointer;
+                border: 1px solid red;
+                border-radius: 0.5em;
+                background-color: $green;
+                color: $white;
+                padding: 0.5em;
+                cursor: pointer;
+                text-decoration: none;
+                box-shadow: 0px 4px 8px 0px #00000020;
+                &:hover {
+                    color:$secondary;
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
     main {
         .title{
             display:flex;
@@ -328,11 +395,19 @@ main {
             }
         }
         .disciplines {
-            .carambole, .blackball {
+            .dissip {
                 display:flex;
                 flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
+                justify-content: space-between;
+
+                .carambole, .blackball {
+                    display:flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    margin:1em;
+                    height:600px;
+                }
             }
         }
     }
