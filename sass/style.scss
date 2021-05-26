@@ -93,6 +93,17 @@ main {
             margin:1em 0;
             width:90%;
             text-align: center;
+            .h1 {
+                border: 2px solid $secondary;
+                border-radius: 0.5em;
+                padding:1em;
+                h1{
+                    color: #184e77;
+                }
+                p {
+                    color: $green;
+                }
+            }
             h2 {
                 font-size: 20px;
             }
@@ -114,13 +125,16 @@ main {
             }
         }  
     }
-    h3 {
+   
+    h3 {   
         text-align: center;
         border: 1px solid $green;
         border-radius: 1em;
         padding: 0.5em;
         margin: 2em;
+        max-width:100%;
     }
+    
     .actus {
         @include title;
         display:flex;
@@ -263,7 +277,7 @@ main {
                 font-size: 17px;
             }
             img {
-                width:200px;   
+                width:200px; 
             }
         }
     }
