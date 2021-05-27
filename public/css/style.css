@@ -44,9 +44,13 @@ header .toggle-wrapper .toggle-button {
   color: white;
   text-align: center;
   border-radius: 100%;
-  padding: 15px 5px;
+  padding: 15px 15px;
   display: block;
   cursor: pointer;
+}
+
+header .toggle-wrapper .toggle-button .bar {
+  color: #548235;
 }
 
 header .toggle-wrapper .toggle-menu {
