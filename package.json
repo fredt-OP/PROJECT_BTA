@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/fredt-OP/PROJECT_BTA/issues"
   },
-  "homepage": "https://github.com/fredt-OP/PROJECT_BTA#readme"
+  "homepage": "https://github.com/fredt-OP/PROJECT_BTA#readme",
+  "dependencies": {
+    "node": "^16.1.0"
+  }
 }
