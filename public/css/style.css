@@ -560,15 +560,15 @@ main .local .locauxText ul li {
 
 main .local .dflexrow {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 main .local .dflexrow img {
-  width: 90%;
-  height: 300px;
+  width: 270.5px;
+  height: 320px;
   object-fit: cover;
-  margin: 0.5em 0;
+  margin: 0.5em;
   border-radius: 0.5em;
   box-shadow: 0px 4px 8px 0px #00000020;
 }
@@ -610,16 +610,17 @@ main .bureau .bureauText ul li {
 
 main .bureau .members {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 main .bureau .members .membersfigure {
-  width: 337.5px;
+  max-width: 337.5px;
+  width: 90%;
   box-shadow: 0px 4px 8px 0px #00000020;
   border: 2px solid #dcb444;
   border-radius: 0.5em;
-  margin: 0.5em 0;
+  margin: 0.5em;
 }
 
 main .bureau .members .membersfigure img {
@@ -826,35 +827,37 @@ main .clubPhotos .dflexrow img {
     justify-content: space-evenly;
   }
   main .createClub .divImg1 {
-    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
   main .createClub .divImg1 img {
+    margin: 2em;
     height: 400px;
     object-fit: cover;
   }
+  main .createClub .divImg1 p {
+    width: 300px;
+  }
   main .createClub .divImg2 {
-    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
   main .createClub .divImg2 img {
+    margin: 2em;
     height: 387px;
     object-fit: cover;
   }
-  main .local .dflexrow {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  main .createClub .divImg2 p {
+    width: 300px;
   }
   main .local .dflexrow img {
     margin: 1em;
     width: 300px;
     object-fit: cover;
-  }
-  main .bureau .members {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
   }
   main .bureau .members .membersfigure {
     margin: 1em;
