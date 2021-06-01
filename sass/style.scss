@@ -310,7 +310,199 @@ main {
         }
     }
     /*LE CLUB*/
+    .titleClub {
+        display: flex;
+        justify-content: center;
+        h1 {
+            border: 2px solid $green;
+            border-radius: 1em;
+            background-color: $secondary;
+            color: $green;
+            padding: 0 0.3em;
+        }
+
+    }
+    .createClub {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        @include title;
+        .paraph {
+            @include deco-text;
+            p {
+                text-align: center;
+            }
+        }
+        .divImg1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            img {
+                max-width: 337.5px;
+                width: 90%;
+                height: 350px;
+                object-fit: cover;
+                margin: 0.5em 0;
+                border-radius: 0.5em;
+                box-shadow: 0px 4px 8px 0px #00000020;
+            }
+            p {
+                @include deco-text;
+                text-align: center;
+            }
+        }
+        .divImg2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                max-width: 337.5px;
+                width: 90%;
+                height: 250px;
+                box-shadow: 0px 4px 8px 0px #00000020;
+                margin: 0.5em 0;
+                border-radius: 0.5em;
+            }
+            p {
+                @include deco-text;
+                text-align: center;
+            }
+        }
+
+    }
+    .local {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        @include title;
+        .locauxText {
+            @include deco-text;
+            margin-bottom: 1em;
+            p {
+                text-align: center;
+            }
+            ul {
+                li {
+                    margin: 0.5em 0;
+                }
+            }
+        }
+        .dflexrow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 90%;
+                height: 300px;
+                object-fit: cover;
+                margin: 0.5em 0;
+                border-radius: 0.5em;
+                box-shadow: 0px 4px 8px 0px #00000020;
+            }
+        }
+
+    }
+    .bureau {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        @include title;
+        .bureauText {
+            @include deco-text;
+            p {
+                text-align: center;
     
+            }
+            ul {
+                li {
+                    margin: 0.5em 0;
+    
+                }
+            }
+        }
+        .members {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        
+            .membersfigure {
+                width:337.5px;
+                box-shadow: 0px 4px 8px 0px #00000020;
+                border: 2px solid $secondary;
+                border-radius: 0.5em;
+                margin: 0.5em 0;
+                img {
+                    width: 100%;
+                    height: 300px;
+                    
+                    border-radius: 0.5em 0.5em 0 0;
+                }
+                .membersFigcaption {
+                    p {
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+    }
+    .statutReg {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        @include title;
+        .statuts {
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            p {
+                @include deco-text;
+                text-align: center;
+            }
+            h3 {
+                cursor: pointer;
+                background-color: $secondary;
+            }
+        }
+        .regles {
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                @include deco-text;
+                text-align: center;
+            }
+            h3 {
+                cursor: pointer;
+                background-color: $secondary;
+            }
+        }
+
+    }
+    .clubPhotos {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        @include title;
+        .dflexrow {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 90%;
+                margin: 0.5em 0;
+                border-radius: 0.5em;
+                box-shadow: 0px 4px 8px 0px #00000020;
+            }
+        }
+
+    }
 }
 @media screen and (min-width: 900px) {
     header {
@@ -412,6 +604,66 @@ main {
                     justify-content: space-evenly;
                     margin:1em;
                     height:600px;
+                }
+            }
+        }
+            /*LE CLUB*/
+        
+        .createClub {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .divImg1 {
+                width:450px;
+                img {
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+            .divImg2 {
+                width:450px;
+                img {
+                    height: 387px;
+                    object-fit: cover;
+                }
+            }
+
+        }
+        .local {
+            .dflexrow {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                img {
+                    margin: 1em;
+                    width: 300px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .bureau {
+            .members {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                .membersfigure {
+                    margin: 1em;
+                }
+            }
+        }
+        .clubPhotos {
+            .dflexrow {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                img {
+                    object-fit: cover;
+                    margin: 1em;
+                    width: 450px;
                 }
             }
         }
