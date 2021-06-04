@@ -358,9 +358,9 @@ main {
             flex-direction: column;
             align-items: center;
             img {
-                max-width: 337.5px;
+                max-width: 600px;
                 width: 90%;
-                height: 250px;
+                height: 300px;
                 box-shadow: 0px 4px 8px 0px #00000020;
                 margin: 0.5em 0;
                 border-radius: 0.5em;
@@ -384,8 +384,10 @@ main {
                 text-align: center;
             }
             ul {
+                text-align: center;
+                list-style: none;
                 li {
-                    margin: 0.5em 0;
+                    margin: 1em 0;
                 }
             }
         }
@@ -411,14 +413,16 @@ main {
         @include title;
         .bureauText {
             @include deco-text;
+            margin-bottom: 1em;
             p {
-                text-align: center;
-    
+                text-align: center;   
             }
             ul {
+                text-align: center;
+                list-style: none;
                 li {
-                    margin: 0.5em 0;
-    
+                    margin: 1em 0;
+                    text-decoration: underline;
                 }
             }
         }
@@ -437,7 +441,7 @@ main {
                 img {
                     width: 100%;
                     height: 300px;
-                    
+                    object-fit: cover;
                     border-radius: 0.5em 0.5em 0 0;
                 }
                 .membersFigcaption {
@@ -468,6 +472,9 @@ main {
                 cursor: pointer;
                 background-color: $secondary;
             }
+        }
+        img {
+            width: 100px;
         }
         .regles {
             width:100%;
@@ -501,7 +508,51 @@ main {
                 box-shadow: 0px 4px 8px 0px #00000020;
             }
         }
+    }
+    //ADHESION//
+    .titleAdhesion {
+        display: flex;
+        justify-content: center;
+        h1 {
+            border: 2px solid $green;
+            border-radius: 1em;
+            background-color: $secondary;
+            color: $green;
+            padding: 0 0.3em;
+        }
 
+    }
+    .titleH2 {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        @include title;  
+    }
+    .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .paraph {
+            margin: 0.5em 0;
+            @include deco-text;
+            p {
+                text-align: center;
+            }
+            .exemple1, .exemple2 {
+                border: 3px solid $secondary;
+                padding: 1em;
+                margin:0;    
+            }
+            .exemple1 {
+                background-color: $green;
+                color:white;
+                font-size: 20px;
+            }
+            .exemple2 {
+                background-color: $primary;
+            }
+            
+        }
     }
 }
 @media screen and (min-width: 900px) {
@@ -671,6 +722,23 @@ main {
                     width: 450px;
                 }
             }
+        }
+        //ADHESION//
+    
+        .block {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .paraph {
+            width: 500px;
+            
+            margin: 1em;
+            }
+            .under {
+                text-decoration: underline;
+            }
+            
         }
     }
 }
