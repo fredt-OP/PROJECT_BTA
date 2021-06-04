@@ -743,6 +743,41 @@ main .clubPhotos .dflexrow img {
   box-shadow: 0px 4px 8px 0px #00000020;
 }
 
+main .titleAnimations {
+  display: flex;
+  justify-content: center;
+}
+
+main .titleAnimations h1 {
+  border: 2px solid #548235;
+  border-radius: 1em;
+  background-color: #dcb444;
+  color: #548235;
+  padding: 0 0.3em;
+}
+
+main .centerImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .centerImg p {
+  text-align: center;
+  width: 90%;
+  border: 2px solid #548235;
+  border-radius: 1em;
+  padding: 0.3em;
+  background-color: #cbdfbd;
+}
+
+main .centerImg img {
+  margin: 1em 0;
+  width: 90%;
+  border-radius: 0.5em;
+}
+
 main .titleAdhesion {
   display: flex;
   justify-content: center;
@@ -956,6 +991,25 @@ main .block .paraph .exemple2 {
     object-fit: cover;
     margin: 1em;
     width: 450px;
+  }
+  main section .block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main section .block .centerImg p {
+    width: 300px;
+    text-align: center;
+    border: 2px solid #548235;
+    border-radius: 1em;
+    padding: 0.3em;
+    background-color: #cbdfbd;
+  }
+  main section .block .centerImg img {
+    width: 400px;
+    margin: 1em;
+    border-radius: 0.5em;
   }
   main .block {
     display: flex;
