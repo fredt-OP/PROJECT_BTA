@@ -509,6 +509,38 @@ main {
             }
         }
     }
+    //ANIMATIONS//
+    .titleAnimations {
+        display: flex;
+        justify-content: center;
+        h1 {
+            border: 2px solid $green;
+            border-radius: 1em;
+            background-color: $secondary;
+            color: $green;
+            padding: 0 0.3em;
+        }
+    }
+    .centerImg {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        p {
+            text-align: center;
+            width:90%;
+            border: 2px solid $green;
+            border-radius: 1em;
+            padding: 0.3em;
+            background-color: $primary;
+        }
+
+        img {
+            margin: 1em 0;
+            width:90%;
+            border-radius: 0.5em;
+        }
+    }
     //ADHESION//
     .titleAdhesion {
         display: flex;
@@ -554,6 +586,7 @@ main {
             
         }
     }
+    
 }
 @media screen and (min-width: 900px) {
     header {
@@ -723,6 +756,34 @@ main {
                 }
             }
         }
+        //ANIMATIONS//
+        section {
+            .block {
+
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row;
+                justify-content: space-evenly;
+                .centerImg {
+                    
+                    p {
+                        width: 300px;
+                        text-align: center;
+                        border: 2px solid $green;
+                        border-radius: 1em;
+                        padding: 0.3em;
+                        background-color: $primary;
+                    }
+                    
+                    img {
+                        width:400px;
+                        margin: 1em;
+                        
+                        border-radius: 0.5em;
+                    }
+                }
+            }
+        }
         //ADHESION//
     
         .block {
@@ -732,7 +793,6 @@ main {
             justify-content: space-evenly;
             .paraph {
             width: 500px;
-            
             margin: 1em;
             }
             .under {
