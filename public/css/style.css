@@ -24,14 +24,13 @@ header .background {
 header .title {
   position: absolute;
   top: 30px;
-  color: #FFF;
+  color: #ffaa00;
   text-align: center;
   display: flex;
   justify-content: center;
   width: 80%;
   align-items: center;
   font-size: 20px;
-  /*border : 2px solid;*/
 }
 
 header .toggle-wrapper {
@@ -383,6 +382,7 @@ main .disciplines h2 {
 
 main .disciplines h3 {
   color: #548235;
+  font-size: 23px;
   background-color: #dcb444;
 }
 
