@@ -586,7 +586,168 @@ main {
             
         }
     }
-    
+    //Calendrier//
+    .titleCalendrier {
+        display: flex;
+        justify-content: center;
+        h1 {
+            border: 2px solid $green;
+            border-radius: 1em;
+            background-color: $secondary;
+            color: $green;
+            padding: 0 0.3em;
+        }
+
+    }
+    .table {
+        display:flex;
+        justify-content: center;
+        table {
+            border: 2px solid $green;
+            width: 90%;
+            word-wrap: break-word;
+            margin-bottom: 1em;
+            .color {
+                background-color: bisque;
+            }
+            .color2 {
+                background-color: $primary;
+            }
+            tr {
+                height: 100px;
+               
+                td, th {
+                    text-align: center;
+                    font-size: 13px;
+                    font-weight: bold;   
+                }
+                th {
+                    background-color: $green;
+                    color: $secondary; 
+                }
+            }
+        }
+    }
+    //Tournois Dep ET REG//
+    .titleTDepReg {
+        display: flex;
+        justify-content: center;
+        h1 {
+            border: 2px solid $green;
+            border-radius: 1em;
+            background-color: $secondary;
+            color: $green;
+            padding: 0 0.3em;
+            margin: 1em;
+            text-align: center;
+        }
+
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        iframe {
+            width:90%;
+            height: 1200px;
+        }
+        .titleH2 {
+            width: 90%;
+        }
+        h3 {
+            color: $secondary;
+            background-color: $green;
+        }
+        .rappel {
+            text-align: center;
+            width:90%;
+            border: 2px solid $green;
+            border-radius: 1em;
+            padding: 0.3em;
+            background-color: $primary;
+            margin: 1em;
+        }
+        .paraph {
+            @include deco-text;
+            text-align: center;
+        }
+        .sizeImg {
+            display: flex;
+            flex-direction: column;
+            img {
+                margin: 1em;
+                width: 350px;
+                height: 270px;
+                border-radius: 0.5em;
+            }
+        }
+    }
+    //TOURNOIS NATIONAUX//
+    .titleTNationaux {
+        display: flex;
+        justify-content: center;
+        h1 {
+            border: 2px solid $green;
+            border-radius: 1em;
+            background-color: $secondary;
+            color: $green;
+            padding: 0 0.3em;
+            margin: 1em;
+            text-align: center;
+        }
+    }
+    //CARAMBOLE//
+    .titleCarambole {
+        display: flex;
+        justify-content: center;
+        h1 {
+            border: 2px solid $green;
+            border-radius: 1em;
+            background-color: $secondary;
+            color: $green;
+            padding: 0 0.3em;
+            margin: 1em;
+            text-align: center;
+        }
+    }
+    //BLACKBALL//
+    .titleBlackball {
+        display: flex;
+        justify-content: center;
+        h1 {
+            border: 2px solid $green;
+            border-radius: 1em;
+            background-color: $secondary;
+            color: $green;
+            padding: 0 0.3em;
+            margin: 1em;
+            text-align: center;
+        }
+    }
+    section {
+        .block {
+            .paraph {
+                .pointer {
+                    .regles {
+                        cursor:pointer;
+                    }
+                }
+
+            }
+        }
+    }
+    .reglesBlackball {
+        .block {
+            width: 100%;
+            .centerImg {
+                width: 90%;
+                img {
+                    width : 100%;
+                    
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: 900px) {
     header {
@@ -776,7 +937,7 @@ main {
                     }
                     
                     img {
-                        width:400px;
+                        max-width:400px;
                         margin: 1em;
                         
                         border-radius: 0.5em;
@@ -799,6 +960,28 @@ main {
                 text-decoration: underline;
             }
             
+        }
+        //TOURNOIS Dep et Reg//
+        .center {
+            .sizeImg {
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+        }
+        //BLACKBALL//
+        .reglesBlackball {
+            .block {
+                width: 100%;
+                .centerImg {
+                    width: 90%;
+                    img {
+                        min-width : 100%;
+                        
+                    }
+                }
+            }
         }
     }
 }

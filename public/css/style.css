@@ -845,6 +845,180 @@ main .block .paraph .exemple2 {
   background-color: #cbdfbd;
 }
 
+main .titleCalendrier {
+  display: flex;
+  justify-content: center;
+}
+
+main .titleCalendrier h1 {
+  border: 2px solid #548235;
+  border-radius: 1em;
+  background-color: #dcb444;
+  color: #548235;
+  padding: 0 0.3em;
+}
+
+main .table {
+  display: flex;
+  justify-content: center;
+}
+
+main .table table {
+  border: 2px solid #548235;
+  width: 90%;
+  word-wrap: break-word;
+  margin-bottom: 1em;
+}
+
+main .table table .color {
+  background-color: bisque;
+}
+
+main .table table .color2 {
+  background-color: #cbdfbd;
+}
+
+main .table table tr {
+  height: 100px;
+}
+
+main .table table tr td, main .table table tr th {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+main .table table tr th {
+  background-color: #548235;
+  color: #dcb444;
+}
+
+main .titleTDepReg {
+  display: flex;
+  justify-content: center;
+}
+
+main .titleTDepReg h1 {
+  border: 2px solid #548235;
+  border-radius: 1em;
+  background-color: #dcb444;
+  color: #548235;
+  padding: 0 0.3em;
+  margin: 1em;
+  text-align: center;
+}
+
+main .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .center iframe {
+  width: 90%;
+  height: 1200px;
+}
+
+main .center .titleH2 {
+  width: 90%;
+}
+
+main .center h3 {
+  color: #dcb444;
+  background-color: #548235;
+}
+
+main .center .rappel {
+  text-align: center;
+  width: 90%;
+  border: 2px solid #548235;
+  border-radius: 1em;
+  padding: 0.3em;
+  background-color: #cbdfbd;
+  margin: 1em;
+}
+
+main .center .paraph {
+  width: 80%;
+  border: 1px solid #dcb444;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+}
+
+main .center .sizeImg {
+  display: flex;
+  flex-direction: column;
+}
+
+main .center .sizeImg img {
+  margin: 1em;
+  width: 350px;
+  height: 270px;
+  border-radius: 0.5em;
+}
+
+main .titleTNationaux {
+  display: flex;
+  justify-content: center;
+}
+
+main .titleTNationaux h1 {
+  border: 2px solid #548235;
+  border-radius: 1em;
+  background-color: #dcb444;
+  color: #548235;
+  padding: 0 0.3em;
+  margin: 1em;
+  text-align: center;
+}
+
+main .titleCarambole {
+  display: flex;
+  justify-content: center;
+}
+
+main .titleCarambole h1 {
+  border: 2px solid #548235;
+  border-radius: 1em;
+  background-color: #dcb444;
+  color: #548235;
+  padding: 0 0.3em;
+  margin: 1em;
+  text-align: center;
+}
+
+main .titleBlackball {
+  display: flex;
+  justify-content: center;
+}
+
+main .titleBlackball h1 {
+  border: 2px solid #548235;
+  border-radius: 1em;
+  background-color: #dcb444;
+  color: #548235;
+  padding: 0 0.3em;
+  margin: 1em;
+  text-align: center;
+}
+
+main section .block .paraph .pointer .regles {
+  cursor: pointer;
+}
+
+main .reglesBlackball .block {
+  width: 100%;
+}
+
+main .reglesBlackball .block .centerImg {
+  width: 90%;
+}
+
+main .reglesBlackball .block .centerImg img {
+  width: 100%;
+}
+
 @media screen and (min-width: 900px) {
   header {
     height: 250px;
@@ -1007,7 +1181,7 @@ main .block .paraph .exemple2 {
     background-color: #cbdfbd;
   }
   main section .block .centerImg img {
-    width: 400px;
+    max-width: 400px;
     margin: 1em;
     border-radius: 0.5em;
   }
@@ -1023,6 +1197,21 @@ main .block .paraph .exemple2 {
   }
   main .block .under {
     text-decoration: underline;
+  }
+  main .center .sizeImg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  main .reglesBlackball .block {
+    width: 100%;
+  }
+  main .reglesBlackball .block .centerImg {
+    width: 90%;
+  }
+  main .reglesBlackball .block .centerImg img {
+    min-width: 100%;
   }
 }
 
