@@ -36,51 +36,69 @@ header {
         
         
     }
-    .toggle-wrapper {
-
-        position:absolute;
-        top: 125px;
-        .toggle-button {
-            background: $secondary;
-            color: white;
-            text-align: center;
-            border-radius: 100%;
-            padding:15px 15px;
-            display: inline-block;
-            margin: 0 auto;
-            cursor: pointer;
-            .bar {
-             color:$green;   
-            }
-          }
-        .toggle-menu {
-            display: none;
-            ul{
-              list-style: none;
-              li {
-                  text-align: center;
-                  border-top: 1px solid #1e1e1e;
-                  a {
-                    text-decoration: none;
-                    color: $secondary;
-                    background: $green;
-                    display: block;
-                    padding: 10px 0;
-                    &:hover {
-                        color: $green;
-                        background: $secondary;
-
-                    }
-                  }
-                }
-            }
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: $green;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 150px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+      }
+      .nav > .nav-links > a {
+          text-align: center;
+        margin: 0.5em;
+        cursor: pointer;
+        border: 1px solid red;
+        border-radius: 0.5em;
+        background: rgb(75,148,34);
+        background: linear-gradient(9deg, rgba(75,148,34,1) 45%, rgba(160,220,68,0.4514180672268907) 100%);
+        color: $white;
+        padding: 0.5em;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0px 4px 8px 0px #00000020;
+        &:hover {
+            color:$secondary;
+            transform: scale(1.02);
         }
-    }
-    nav {
         
-        display:none;
-    }    
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(600px - 50px);
+        overflow-y: auto;
+      }
+    
 }
+    
 main {
     .construct {
         width:100%;
@@ -724,12 +742,11 @@ main {
             object-fit: cover;
             position:relative;
         }
-        .toggle-wrapper{
+        /*.toggle-wrapper{
             display:none;
         }
         nav {
-            /*display:box;*/
-            /*display: contents;*/
+            
             visibility: visible;
             position: absolute;
             top: 130px;
@@ -754,7 +771,7 @@ background: linear-gradient(9deg, rgba(75,148,34,1) 45%, rgba(160,220,68,0.45141
                     transform: scale(1.02);
                 }
             }
-        }
+        }*/
     }
     main {
         .title{
