@@ -7,7 +7,8 @@
   h2 {
   border: 1px solid $secondary;
   color: $white;
-  background-color: $green;
+  background: rgb(84,130,53);
+background: linear-gradient(9deg, rgba(84,130,53,1) 45%, rgba(28,228,17,0.7959558823529411) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -32,4 +33,11 @@
   padding: 1em;
 }
 
-
+@mixin titleH1 {
+  border: 2px solid $green;
+  border-radius: 0.5em;
+  background: rgb(41,145,41);
+background: linear-gradient(9deg, rgba(41,145,41,1) 39%, rgba(219,231,22,0.4514180672268907) 100%);
+  color: white;
+  padding: 0 0.8em;
+}

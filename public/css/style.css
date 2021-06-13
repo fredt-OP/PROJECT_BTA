@@ -24,7 +24,8 @@ header .background {
 header .title {
   position: absolute;
   top: 30px;
-  color: #ffaa00;
+  color: #f4e4ba;
+  text-shadow: 4px 4px 2px rgba(84, 130, 53, 0.6);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -44,7 +45,8 @@ header .toggle-wrapper .toggle-button {
   text-align: center;
   border-radius: 100%;
   padding: 15px 15px;
-  display: block;
+  display: inline-block;
+  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -184,7 +186,8 @@ main .actus {
 main .actus h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -240,7 +243,8 @@ main .presentation {
 main .presentation h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -278,7 +282,8 @@ main .membership {
 main .membership h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -316,7 +321,8 @@ main .partners {
 main .partners h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -372,7 +378,8 @@ main .disciplines {
 main .disciplines h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -436,10 +443,11 @@ main .titleClub {
 
 main .titleClub h1 {
   border: 2px solid #548235;
-  border-radius: 1em;
-  background-color: #dcb444;
-  color: #548235;
-  padding: 0 0.3em;
+  border-radius: 0.5em;
+  background: #299129;
+  background: linear-gradient(9deg, #299129 39%, rgba(219, 231, 22, 0.451418) 100%);
+  color: white;
+  padding: 0 0.8em;
 }
 
 main .createClub {
@@ -454,7 +462,8 @@ main .createClub {
 main .createClub h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -534,7 +543,8 @@ main .local {
 main .local h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -590,7 +600,8 @@ main .bureau {
 main .bureau h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -658,7 +669,8 @@ main .statutReg {
 main .statutReg h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -722,7 +734,8 @@ main .clubPhotos {
 main .clubPhotos h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -750,10 +763,11 @@ main .titleAnimations {
 
 main .titleAnimations h1 {
   border: 2px solid #548235;
-  border-radius: 1em;
-  background-color: #dcb444;
-  color: #548235;
-  padding: 0 0.3em;
+  border-radius: 0.5em;
+  background: #299129;
+  background: linear-gradient(9deg, #299129 39%, rgba(219, 231, 22, 0.451418) 100%);
+  color: white;
+  padding: 0 0.8em;
 }
 
 main .centerImg {
@@ -785,10 +799,11 @@ main .titleAdhesion {
 
 main .titleAdhesion h1 {
   border: 2px solid #548235;
-  border-radius: 1em;
-  background-color: #dcb444;
-  color: #548235;
-  padding: 0 0.3em;
+  border-radius: 0.5em;
+  background: #299129;
+  background: linear-gradient(9deg, #299129 39%, rgba(219, 231, 22, 0.451418) 100%);
+  color: white;
+  padding: 0 0.8em;
 }
 
 main .titleH2 {
@@ -803,7 +818,8 @@ main .titleH2 {
 main .titleH2 h2 {
   border: 1px solid #dcb444;
   color: #FFF;
-  background-color: #548235;
+  background: #548235;
+  background: linear-gradient(9deg, #548235 45%, rgba(28, 228, 17, 0.795956) 100%);
   border-radius: 1em;
   box-shadow: 0px 4px 8px 0px #00000020;
   padding: 0.3em;
@@ -845,6 +861,10 @@ main .block .paraph .exemple2 {
   background-color: #cbdfbd;
 }
 
+main .block .ball {
+  width: 250px;
+}
+
 main .titleCalendrier {
   display: flex;
   justify-content: center;
@@ -852,10 +872,11 @@ main .titleCalendrier {
 
 main .titleCalendrier h1 {
   border: 2px solid #548235;
-  border-radius: 1em;
-  background-color: #dcb444;
-  color: #548235;
-  padding: 0 0.3em;
+  border-radius: 0.5em;
+  background: #299129;
+  background: linear-gradient(9deg, #299129 39%, rgba(219, 231, 22, 0.451418) 100%);
+  color: white;
+  padding: 0 0.8em;
 }
 
 main .table {
@@ -900,12 +921,11 @@ main .titleTDepReg {
 
 main .titleTDepReg h1 {
   border: 2px solid #548235;
-  border-radius: 1em;
-  background-color: #dcb444;
-  color: #548235;
-  padding: 0 0.3em;
-  margin: 1em;
-  text-align: center;
+  border-radius: 0.5em;
+  background: #299129;
+  background: linear-gradient(9deg, #299129 39%, rgba(219, 231, 22, 0.451418) 100%);
+  color: white;
+  padding: 0 0.8em;
 }
 
 main .center {
@@ -965,12 +985,11 @@ main .titleTNationaux {
 
 main .titleTNationaux h1 {
   border: 2px solid #548235;
-  border-radius: 1em;
-  background-color: #dcb444;
-  color: #548235;
-  padding: 0 0.3em;
-  margin: 1em;
-  text-align: center;
+  border-radius: 0.5em;
+  background: #299129;
+  background: linear-gradient(9deg, #299129 39%, rgba(219, 231, 22, 0.451418) 100%);
+  color: white;
+  padding: 0 0.8em;
 }
 
 main .titleCarambole {
@@ -980,12 +999,11 @@ main .titleCarambole {
 
 main .titleCarambole h1 {
   border: 2px solid #548235;
-  border-radius: 1em;
-  background-color: #dcb444;
-  color: #548235;
-  padding: 0 0.3em;
-  margin: 1em;
-  text-align: center;
+  border-radius: 0.5em;
+  background: #299129;
+  background: linear-gradient(9deg, #299129 39%, rgba(219, 231, 22, 0.451418) 100%);
+  color: white;
+  padding: 0 0.8em;
 }
 
 main .titleBlackball {
@@ -995,12 +1013,11 @@ main .titleBlackball {
 
 main .titleBlackball h1 {
   border: 2px solid #548235;
-  border-radius: 1em;
-  background-color: #dcb444;
-  color: #548235;
-  padding: 0 0.3em;
-  margin: 1em;
-  text-align: center;
+  border-radius: 0.5em;
+  background: #299129;
+  background: linear-gradient(9deg, #299129 39%, rgba(219, 231, 22, 0.451418) 100%);
+  color: white;
+  padding: 0 0.8em;
 }
 
 main section .block .paraph .pointer .regles {
@@ -1051,7 +1068,8 @@ main .reglesBlackball .block .centerImg img {
     cursor: pointer;
     border: 1px solid red;
     border-radius: 0.5em;
-    background-color: #548235;
+    background: #4b9422;
+    background: linear-gradient(9deg, #4b9422 45%, rgba(160, 220, 68, 0.451418) 100%);
     color: #FFF;
     padding: 0.5em;
     cursor: pointer;
