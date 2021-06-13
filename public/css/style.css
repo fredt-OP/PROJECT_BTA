@@ -34,18 +34,22 @@ header .title {
   font-size: 20px;
 }
 
+header .nav input {
+  display: none;
+}
+
 header .nav > .nav-btn {
   display: inline-block;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 0px;
 }
 
 header .nav > .nav-btn > label {
   display: inline-block;
-  width: 50px;
+  width: 25px;
   height: 50px;
-  padding: 13px;
+  padding: 15px;
 }
 
 header .nav > .nav-btn > label:hover, header .nav #nav-check:checked ~ .nav-btn > label {
@@ -98,7 +102,7 @@ header .nav > #nav-check:not(:checked) ~ .nav-links {
 }
 
 header .nav > #nav-check:checked ~ .nav-links {
-  height: calc(600px - 50px);
+  height: calc(625px - 50px);
   overflow-y: auto;
 }
 
@@ -1060,36 +1064,6 @@ main .reglesBlackball .block .centerImg img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*.toggle-wrapper{
-            display:none;
-        }
-        nav {
-            
-            visibility: visible;
-            position: absolute;
-            top: 130px;
-            display:flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;        
-            a {
-                margin: 0.5em;
-                cursor: pointer;
-                border: 1px solid red;
-                border-radius: 0.5em;
-                background: rgb(75,148,34);
-background: linear-gradient(9deg, rgba(75,148,34,1) 45%, rgba(160,220,68,0.4514180672268907) 100%);
-                color: $white;
-                padding: 0.5em;
-                cursor: pointer;
-                text-decoration: none;
-                box-shadow: 0px 4px 8px 0px #00000020;
-                &:hover {
-                    color:$secondary;
-                    transform: scale(1.02);
-                }
-            }
-        }*/
   }
   header .background {
     width: 100%;
@@ -1188,6 +1162,7 @@ background: linear-gradient(9deg, rgba(75,148,34,1) 45%, rgba(160,220,68,0.45141
     object-fit: cover;
   }
   main .bureau .members .membersfigure {
+    width: 280px;
     margin: 1em;
   }
   main .clubPhotos .dflexrow {
