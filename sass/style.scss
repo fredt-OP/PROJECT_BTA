@@ -102,6 +102,7 @@ header {
 }
     
 main {
+    
     .construct {
         width:100%;
         display: flex;
@@ -694,6 +695,7 @@ main {
         h2 {
             width: 90%;
             text-align: center;
+            font-size: 30px;
             @include titleH1;
         }
 
@@ -753,7 +755,7 @@ main {
             animation: 15s slidy3 infinite;
             img {
                 width: 11.11%;
-                height: 250px;
+                height: 220px;
                 float: left;
             }
         }
@@ -763,8 +765,18 @@ main {
         display: flex;
         justify-content: center;
         h2 {
+            width:90%;
+            text-align: center;
+            font-size: 30px;
             @include titleH1;
         }
+    }
+    .block2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+
     }
     .slider4 {
             
@@ -776,7 +788,7 @@ main {
         .caroussel {
             position: relative; 
             width: 900%;
-            height: 500px;
+            height: 380px;
             margin: 0;
             padding: 0;
             font-size: 0;
@@ -784,7 +796,7 @@ main {
             animation: 15s slidy3 infinite;
             img {
                 width: 11.11%;
-                height: 500px;
+                height: 380px;
                 float: left;
             }
         }
@@ -885,11 +897,12 @@ main {
             height: 0px;
           }
           .nav > #nav-check:checked ~ .nav-links {
-            height: calc(170px - 50px);
+            height: calc(105px - 50px);
             overflow-y: auto;
         } 
     }
     main {
+        padding-top: 3em;
         .title{
             display:flex;
             flex-direction: row;
@@ -1047,15 +1060,7 @@ main {
             }
             
         }
-        //TOURNOIS Dep et Reg//
-        .center {
-            .sizeImg {
-                display:flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-            }
-        }
+        
         //BLACKBALL//
         .reglesBlackball {
             .block {
