@@ -3,6 +3,120 @@
 /*centrer*/
 /*décoration du texte*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  7% {
+    left: 0%;
+  }
+  12% {
+    left: -100%;
+  }
+  19% {
+    left: -100%;
+  }
+  24% {
+    left: -200%;
+  }
+  31% {
+    left: -200%;
+  }
+  36% {
+    left: -300%;
+  }
+  43% {
+    left: -300%;
+  }
+  48% {
+    left: -400%;
+  }
+  55% {
+    left: -400%;
+  }
+  60% {
+    left: -500%;
+  }
+  67% {
+    left: -500%;
+  }
+  72% {
+    left: -600%;
+  }
+  79% {
+    left: -600%;
+  }
+  84% {
+    left: -700%;
+  }
+  91% {
+    left: -700%;
+  }
+  96% {
+    left: -800%;
+  }
+  98% {
+    left: -800%;
+  }
+  100% {
+    left: -900%;
+  }
+}
+
+@keyframes slidy2 {
+  0% {
+    left: 0%;
+  }
+  30% {
+    left: 0%;
+  }
+  35% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  65% {
+    left: -200%;
+  }
+  95% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+@keyframes slidy3 {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
 /*achanger*/
 body {
   margin: 0 auto;
@@ -290,6 +404,7 @@ main .presentation .flex-around .association {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
 }
 
 main .membership {
@@ -329,6 +444,7 @@ main .membership .flex-col .parag {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
 }
 
 main .partners {
@@ -357,6 +473,7 @@ main .partners .block {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
   margin: 1em;
 }
 
@@ -426,6 +543,7 @@ main .disciplines .dissip .carambole {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -445,6 +563,7 @@ main .disciplines .dissip .blackball {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -498,6 +617,7 @@ main .createClub .paraph {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
 }
 
 main .createClub .paraph p {
@@ -527,6 +647,7 @@ main .createClub .divImg1 p {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
   text-align: center;
 }
 
@@ -550,6 +671,7 @@ main .createClub .divImg2 p {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
   text-align: center;
 }
 
@@ -579,6 +701,7 @@ main .local .locauxText {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
   margin-bottom: 1em;
 }
 
@@ -636,6 +759,7 @@ main .bureau .bureauText {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
   margin-bottom: 1em;
 }
 
@@ -660,23 +784,30 @@ main .bureau .members {
 }
 
 main .bureau .members .membersfigure {
-  max-width: 337.5px;
-  width: 90%;
+  max-width: 148px;
   box-shadow: 0px 4px 8px 0px #00000020;
-  border: 2px solid #dcb444;
-  border-radius: 0.5em;
+  border: 3px solid #dcb444;
+  border-radius: 0.7em;
   margin: 0.5em;
 }
 
 main .bureau .members .membersfigure img {
-  width: 100%;
-  height: 300px;
+  display: flex;
+  justify-content: center;
+  width: 144px;
+  height: 170px;
   object-fit: cover;
   border-radius: 0.5em 0.5em 0 0;
+  border: 2px solid white;
+}
+
+main .bureau .members .membersfigure .membersFigcaption {
+  padding-top: 0.3em;
 }
 
 main .bureau .members .membersfigure .membersFigcaption p {
   text-align: center;
+  margin: 0 0.3em;
 }
 
 main .statutReg {
@@ -712,6 +843,7 @@ main .statutReg .statuts p {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
   text-align: center;
 }
 
@@ -736,6 +868,7 @@ main .statutReg .regles p {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
   text-align: center;
 }
 
@@ -765,17 +898,27 @@ main .clubPhotos h2 {
   width: 90%;
 }
 
-main .clubPhotos .dflexrow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main .clubPhotos .slider {
+  width: 95%;
+  border-radius: 1em;
+  max-width: 500px;
+  overflow: hidden;
 }
 
-main .clubPhotos .dflexrow img {
-  width: 90%;
-  margin: 0.5em 0;
-  border-radius: 0.5em;
-  box-shadow: 0px 4px 8px 0px #00000020;
+main .clubPhotos .slider .caroussel {
+  position: relative;
+  width: 900%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 49s slidy infinite;
+}
+
+main .clubPhotos .slider .caroussel img {
+  width: 11.11%;
+  height: 250px;
+  float: left;
 }
 
 main .titleAnimations {
@@ -792,14 +935,36 @@ main .titleAnimations h1 {
   padding: 0 0.8em;
 }
 
-main .centerImg {
+main section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-main .centerImg p {
+main section .slider {
+  width: 90%;
+  border-radius: 1em;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+main section .slider .caroussel {
+  position: relative;
+  width: 900%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 15s slidy2 infinite;
+}
+
+main section .slider .caroussel img {
+  width: 11.11%;
+  height: 250px;
+  float: left;
+}
+
+main section .champion {
   text-align: center;
   width: 90%;
   border: 2px solid #548235;
@@ -808,7 +973,23 @@ main .centerImg p {
   background-color: #cbdfbd;
 }
 
-main .centerImg img {
+main section .centerImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main section .centerImg p {
+  text-align: center;
+  width: 90%;
+  border: 2px solid #548235;
+  border-radius: 1em;
+  padding: 0.3em;
+  background-color: #cbdfbd;
+}
+
+main section .centerImg img {
   margin: 1em 0;
   width: 90%;
   border-radius: 0.5em;
@@ -861,6 +1042,7 @@ main .block .paraph {
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
 }
 
 main .block .paraph p {
@@ -939,9 +1121,12 @@ main .table table tr th {
 main .titleTDepReg {
   display: flex;
   justify-content: center;
+  margin: 2em;
 }
 
-main .titleTDepReg h1 {
+main .titleTDepReg h2 {
+  width: 90%;
+  text-align: center;
   border: 2px solid #548235;
   border-radius: 0.5em;
   background: #299129;
@@ -956,9 +1141,19 @@ main .center {
   align-items: center;
 }
 
+main .center .rappel {
+  text-align: center;
+  width: 90%;
+  border: 2px solid #548235;
+  border-radius: 1em;
+  padding: 0.3em;
+  background-color: #cbdfbd;
+  margin: 1em;
+}
+
 main .center iframe {
   width: 90%;
-  height: 1200px;
+  height: 900px;
 }
 
 main .center .titleH2 {
@@ -970,21 +1165,12 @@ main .center h3 {
   background-color: #548235;
 }
 
-main .center .rappel {
-  text-align: center;
-  width: 90%;
-  border: 2px solid #548235;
-  border-radius: 1em;
-  padding: 0.3em;
-  background-color: #cbdfbd;
-  margin: 1em;
-}
-
 main .center .paraph {
   width: 80%;
   border: 1px solid #dcb444;
   border-radius: 0.5em;
   padding: 1em;
+  color: #184e77;
   text-align: center;
 }
 
@@ -1000,18 +1186,70 @@ main .center .sizeImg img {
   border-radius: 0.5em;
 }
 
+main .slider5 {
+  width: 90%;
+  border-radius: 1em;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+main .slider5 .caroussel {
+  position: relative;
+  width: 900%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 15s slidy3 infinite;
+}
+
+main .slider5 .caroussel img {
+  width: 11.11%;
+  height: 250px;
+  float: left;
+}
+
 main .titleTNationaux {
   display: flex;
   justify-content: center;
 }
 
-main .titleTNationaux h1 {
+main .titleTNationaux h2 {
   border: 2px solid #548235;
   border-radius: 0.5em;
   background: #299129;
   background: linear-gradient(9deg, #299129 39%, rgba(219, 231, 22, 0.451418) 100%);
   color: white;
   padding: 0 0.8em;
+}
+
+main .slider4 {
+  width: 90%;
+  border-radius: 1em;
+  max-width: 500px;
+  overflow: hidden;
+  margin: 1em 0;
+}
+
+main .slider4 .caroussel {
+  position: relative;
+  width: 900%;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 15s slidy3 infinite;
+}
+
+main .slider4 .caroussel img {
+  width: 11.11%;
+  height: 500px;
+  float: left;
+}
+
+main .natBlack {
+  margin-bottom: 1em;
 }
 
 main .titleCarambole {
@@ -1060,16 +1298,57 @@ main .reglesBlackball .block .centerImg img {
 
 @media screen and (min-width: 900px) {
   header {
-    height: 250px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   header .background {
     width: 100%;
-    height: 250px;
     object-fit: cover;
     position: relative;
+  }
+  header .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #548235;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 150px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .nav > .nav-links > a {
+    text-align: center;
+    margin: 0.5em;
+    cursor: pointer;
+    height: 20px;
+    border: 1px solid red;
+    border-radius: 0.5em;
+    background: #4b9422;
+    background: linear-gradient(9deg, #4b9422 45%, rgba(160, 220, 68, 0.451418) 100%);
+    color: #FFF;
+    padding: 0.5em;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px 0px #00000020;
+  }
+  header .nav > .nav-links > a:hover {
+    color: #dcb444;
+    transform: scale(1.02);
+  }
+  header .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  header .nav > #nav-check:checked ~ .nav-links {
+    height: calc(170px - 50px);
+    overflow-y: auto;
   }
   main {
     /*LE CLUB*/
@@ -1164,17 +1443,6 @@ main .reglesBlackball .block .centerImg img {
   main .bureau .members .membersfigure {
     width: 280px;
     margin: 1em;
-  }
-  main .clubPhotos .dflexrow {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  main .clubPhotos .dflexrow img {
-    object-fit: cover;
-    margin: 1em;
-    width: 450px;
   }
   main section .block {
     display: flex;
