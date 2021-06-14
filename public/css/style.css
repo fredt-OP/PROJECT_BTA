@@ -1357,10 +1357,11 @@ main .reglesBlackball .block .centerImg img {
     height: 0px;
   }
   header .nav > #nav-check:checked ~ .nav-links {
-    height: calc(170px - 50px);
+    height: calc(105px - 50px);
     overflow-y: auto;
   }
   main {
+    padding-top: 3em;
     /*LE CLUB*/
   }
   main .title {
