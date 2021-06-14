@@ -1127,6 +1127,7 @@ main .titleTDepReg {
 main .titleTDepReg h2 {
   width: 90%;
   text-align: center;
+  font-size: 30px;
   border: 2px solid #548235;
   border-radius: 0.5em;
   background: #299129;
@@ -1205,7 +1206,7 @@ main .slider5 .caroussel {
 
 main .slider5 .caroussel img {
   width: 11.11%;
-  height: 250px;
+  height: 220px;
   float: left;
 }
 
@@ -1215,12 +1216,21 @@ main .titleTNationaux {
 }
 
 main .titleTNationaux h2 {
+  width: 90%;
+  text-align: center;
+  font-size: 30px;
   border: 2px solid #548235;
   border-radius: 0.5em;
   background: #299129;
   background: linear-gradient(9deg, #299129 39%, rgba(219, 231, 22, 0.451418) 100%);
   color: white;
   padding: 0 0.8em;
+}
+
+main .block2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 main .slider4 {
@@ -1234,7 +1244,7 @@ main .slider4 {
 main .slider4 .caroussel {
   position: relative;
   width: 900%;
-  height: 500px;
+  height: 380px;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -1244,7 +1254,7 @@ main .slider4 .caroussel {
 
 main .slider4 .caroussel img {
   width: 11.11%;
-  height: 500px;
+  height: 380px;
   float: left;
 }
 
@@ -1475,12 +1485,6 @@ main .reglesBlackball .block .centerImg img {
   }
   main .block .under {
     text-decoration: underline;
-  }
-  main .center .sizeImg {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
   }
   main .reglesBlackball .block {
     width: 100%;
