@@ -31,6 +31,7 @@ background: linear-gradient(9deg, rgba(84,130,53,1) 45%, rgba(28,228,17,0.795955
   border: 1px solid $secondary;
   border-radius: 0.5em;
   padding: 1em;
+  color: $tertiary;
 }
 
 @mixin titleH1 {
