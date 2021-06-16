@@ -224,12 +224,6 @@ main {
   /*LE CLUB*/
 }
 
-main .construct {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 main .title {
   margin-top: 1em;
   display: flex;
@@ -1306,6 +1300,42 @@ main .reglesBlackball .block .centerImg img {
   width: 100%;
 }
 
+main .adresse {
+  width: 100%;
+}
+
+main .adresse .cdv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #dcb444;
+  border-radius: 0.5em;
+  padding: 1em;
+  color: #184e77;
+  text-align: center;
+  margin: 1em 0;
+}
+
+main .adresse .cdv img {
+  width: 150px;
+}
+
+main .location {
+  width: 100%;
+}
+
+main .location .maps {
+  margin: 1em 0;
+  width: 90%;
+}
+
+main .location .maps iframe {
+  border-radius: 0.5em;
+  width: 100%;
+  height: 400px;
+}
+
 @media screen and (min-width: 900px) {
   header {
     height: 150px;
@@ -1495,6 +1525,41 @@ main .reglesBlackball .block .centerImg img {
   }
   main .reglesBlackball .block .centerImg img {
     min-width: 100%;
+  }
+  main .adresse {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  main .adresse .cdv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 700px;
+    width: 80%;
+    border: 1px solid #dcb444;
+    border-radius: 0.5em;
+    padding: 1em;
+    color: #184e77;
+    text-align: center;
+    margin: 1em 0;
+  }
+  main .adresse .cdv img {
+    width: 150px;
+  }
+  main .location {
+    width: 100%;
+  }
+  main .location .maps {
+    margin: 2em 0;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  main .location .maps iframe {
+    border-radius: 0.5em;
+    width: 900px;
+    height: 600px;
   }
 }
 
