@@ -42,23 +42,23 @@ header {
         position: absolute;
         right: 0;
         top: 0px;
-      }
-      .nav > .nav-btn > label {
+    }
+    .nav > .nav-btn > label {
         display: inline-block;
         width: 25px;
         height: 50px;
         padding: 15px;
-      }
-      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
         background-color: rgba(0, 0, 0, 0.3);
-      }
-      .nav > .nav-btn > label > span {
+    }
+    .nav > .nav-btn > label > span {
         display: block;
         width: 25px;
         height: 10px;
         border-top: 2px solid #eee;
-      }
-      .nav > .nav-links {
+    }
+    .nav > .nav-links {
         position: absolute;
         display: block;
         width: 100%;
@@ -70,9 +70,9 @@ header {
         left: 0px;
         display: flex;
         flex-direction: column;
-      }
-      .nav > .nav-links > a {
-          text-align: center;
+    }
+    .nav > .nav-links > a {
+        text-align: center;
         margin: 0.5em;
         cursor: pointer;
         border: 1px solid red;
@@ -90,18 +90,18 @@ header {
         }
         
     }
-      .nav > #nav-check:not(:checked) ~ .nav-links {
+    .nav > #nav-check:not(:checked) ~ .nav-links {
         height: 0px;
-      }
-      .nav > #nav-check:checked ~ .nav-links {
+    }
+    .nav > #nav-check:checked ~ .nav-links {
         height: calc(625px - 50px);
         overflow-y: auto;
-      }
-    
-    
+    } 
 }
     
 main {
+    background: rgb(62,213,145);
+    background: linear-gradient(17deg, rgba(62,213,145,0.8267682072829132) 6%, rgba(15,231,217,0) 100%);
     .title{
         margin-top: 1em;
         display: flex;
@@ -110,16 +110,13 @@ main {
         .divImg {
             width:80%;
             max-width: 400px;
-            
             .imgHall {
                 object-fit: cover;
-                width:100%;
-                
+                width:100%;  
             }
             .imgSalle {
                 width:100%;
-                object-fit: cover;
-                
+                object-fit: cover;  
             }
         }
         .textBienvenue {
@@ -172,7 +169,6 @@ main {
         margin: 2em;
         max-width:100%;
     }
-    
     .actus {
         @include title;
         display:flex;
@@ -190,12 +186,10 @@ main {
                 border-radius: 1em;
                 margin: 1em;
                 padding:1em;
-            
             }
         }
         .news {
             @include flex-center;
-            
             .actu {
                 width: 300px;
                 height: 500px;
@@ -215,7 +209,6 @@ main {
         display:flex;
         flex-direction: column;
         align-items: center;
-        
         .flex-around {
             display:flex;
             flex-direction: column;
@@ -258,8 +251,7 @@ main {
             p {
                 text-align: center;
                 font-size: 20px;
-                font-weight: bold;
-                
+                font-weight: bold;   
             }
             .instit {
                 display:flex;
@@ -290,7 +282,6 @@ main {
             color: $green;
             font-size: 23px;
             background-color: $secondary;
-            
         }
         .dissip {
             display:flex;
@@ -330,7 +321,6 @@ main {
         h1 {
             @include titleH1;
         }
-
     }
     .createClub {
         display:flex;
@@ -380,7 +370,6 @@ main {
                 text-align: center;
             }
         }
-
     }
     .local {
         display:flex;
@@ -414,7 +403,6 @@ main {
                 box-shadow: 0px 4px 8px 0px #00000020;
             }
         }
-
     }
     .bureau {
         display:flex;
@@ -440,7 +428,6 @@ main {
             display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
-        
             .membersfigure {
                 max-width:148px;
                 box-shadow: 0px 4px 8px 0px #00000020;
@@ -458,12 +445,9 @@ main {
                 }
                 .membersFigcaption {
                     padding-top: 0.3em;
-                    
-                    
                     p {
                         text-align: center;
                         margin: 0 0.3em;
-
                     }
                 }
             }
@@ -479,7 +463,6 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            
             p {
                 @include deco-text;
                 text-align: center;
@@ -506,7 +489,6 @@ main {
                 background-color: $secondary;
             }
         }
-
     }
     .clubPhotos {
         display:flex;
@@ -533,7 +515,6 @@ main {
                 } 
             }
         }
-        
     }
     //ANIMATIONS//
     .titleAnimations {
@@ -548,7 +529,6 @@ main {
         flex-direction: column;
         align-items: center;
         .slider {
-            
             width: 90%;
             border-radius: 1em;
             max-width: 500px;
@@ -589,7 +569,6 @@ main {
                 padding: 0.3em;
                 background-color: $primary;
             }
-    
             img {
                 margin: 1em 0;
                 width:90%;
@@ -605,7 +584,6 @@ main {
         h1 {
             @include titleH1;
         }
-
     }
     .titleH2 {
         display:flex;
@@ -648,7 +626,6 @@ main {
         h1 {
             @include titleH1;
         }
-
     }
     .table {
         display:flex;
@@ -666,7 +643,6 @@ main {
             }
             tr {
                 height: 100px;
-               
                 td, th {
                     text-align: center;
                     font-size: 13px;
@@ -690,7 +666,6 @@ main {
             font-size: 30px;
             @include titleH1;
         }
-
     }
     .center {
         display: flex;
@@ -731,8 +706,7 @@ main {
             }
         }
     }
-    .slider5 {
-            
+    .slider5 {  
         width: 90%;
         border-radius: 1em;
         max-width: 500px;
@@ -753,11 +727,12 @@ main {
         }
     }
     //TOURNOIS NATIONAUX//
-    .titleTNationaux {
+    .titleNationaux {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        width:90%;
         h2 {
-            width:90%;
             text-align: center;
             font-size: 30px;
             @include titleH1;
@@ -767,11 +742,8 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        
-
     }
-    .slider4 {
-            
+    .slider4 {  
         width: 90%;
         border-radius: 1em;
         max-width: 500px;
@@ -820,7 +792,6 @@ main {
                         cursor:pointer;
                     }
                 }
-
             }
         }
     }
@@ -830,8 +801,7 @@ main {
             .centerImg {
                 width: 90%;
                 img {
-                    width : 100%;
-                    
+                    width : 100%;  
                 }
             }
         }
@@ -872,7 +842,6 @@ main {
         align-items: center;
         .background {
             width:100%;
-            
             object-fit: cover;
             position:relative;
         }
@@ -891,9 +860,9 @@ main {
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-          }
-          .nav > .nav-links > a {
-              text-align: center;
+        }
+        .nav > .nav-links > a {
+            text-align: center;
             margin: 0.5em;
             cursor: pointer;
             height: 20px;
@@ -910,12 +879,11 @@ main {
                 color:$secondary;
                 transform: scale(1.02);
             }
-            
         }
-          .nav > #nav-check:not(:checked) ~ .nav-links {
+        .nav > #nav-check:not(:checked) ~ .nav-links {
             height: 0px;
-          }
-          .nav > #nav-check:checked ~ .nav-links {
+        }
+        .nav > #nav-check:checked ~ .nav-links {
             height: calc(105px - 50px);
             overflow-y: auto;
         } 
@@ -935,7 +903,6 @@ main {
                 width:33%;
                 height:100%;
             }
-            
         }
         .presentation {
             .flex-around {
@@ -961,7 +928,6 @@ main {
                     img {
                         width: 150px;
                     }
-                    
                 }
             }
         }
@@ -970,7 +936,6 @@ main {
                 display:flex;
                 flex-direction: row;
                 justify-content: space-between;
-
                 .carambole, .blackball {
                     display:flex;
                     flex-direction: row;
@@ -1038,13 +1003,11 @@ main {
         //ANIMATIONS//
         section {
             .block {
-
                 display:flex;
                 flex-wrap: wrap;
                 flex-direction:row;
                 justify-content: space-evenly;
                 .centerImg {
-                    
                     p {
                         width: 300px;
                         text-align: center;
@@ -1053,11 +1016,9 @@ main {
                         padding: 0.3em;
                         background-color: $primary;
                     }
-                    
                     img {
                         max-width:400px;
                         margin: 1em;
-                        
                         border-radius: 0.5em;
                     }
                 }
@@ -1077,7 +1038,6 @@ main {
             .under {
                 text-decoration: underline;
             }
-            
         }
         
         //BLACKBALL//
@@ -1087,8 +1047,7 @@ main {
                 .centerImg {
                     width: 90%;
                     img {
-                        min-width : 100%;
-                        
+                        min-width : 100%;  
                     }
                 }
             }
@@ -1128,8 +1087,6 @@ main {
     }
 }
 
-
-
 footer {
     display: flex;
     flex-direction: column;
@@ -1141,17 +1098,12 @@ footer {
         margin:0.5em;
         a {
             margin: 0.5em
-        }
-        
-        
+        }    
     }
     a {
         color:white;
         font-weight: bold;
         font-size: 20px;
-        
         margin-bottom:1em;
-
     }
-
 }
