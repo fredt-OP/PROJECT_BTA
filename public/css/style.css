@@ -945,6 +945,10 @@ main .titleAnimations h1 {
   padding: 0 0.8em;
 }
 
+main .titleAnimations .titleH2 {
+  width: 80%;
+}
+
 main section {
   display: flex;
   flex-direction: column;
@@ -1270,7 +1274,7 @@ main .slider4 .caroussel img {
 }
 
 main .natBlack {
-  margin-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 main .titleCarambole {
@@ -1332,6 +1336,10 @@ main .adresse .cdv {
   color: #184e77;
   text-align: center;
   margin: 1em 0;
+}
+
+main .adresse .cdv .paraphcdv {
+  margin-bottom: 1em;
 }
 
 main .adresse .cdv img {
@@ -1502,11 +1510,14 @@ main .location .maps iframe {
     width: 280px;
     margin: 1em;
   }
+  main section .titleH2 {
+    width: 80%;
+  }
   main section .block {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   main section .block .centerImg p {
     width: 300px;
