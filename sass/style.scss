@@ -537,6 +537,9 @@ main {
         h1 {
             @include titleH1;
         }
+        .titleH2 {
+            width:80%;
+        }
     }
     section {
         display: flex;
@@ -780,7 +783,7 @@ main {
         }
     }
     .natBlack {
-        margin-bottom: 1em;
+        padding-bottom: 1em;
     }
     //CARAMBOLE//
     .titleCarambole {
@@ -830,6 +833,9 @@ main {
             @include deco-text;
             text-align: center;
             margin: 1em 0;
+            .paraphcdv {
+                margin-bottom: 1em;
+            }
             img {
                 width: 150px;
             }
@@ -1016,11 +1022,14 @@ main {
         
         //ANIMATIONS//
         section {
+            .titleH2 {
+                width: 80%;
+            }
             .block {
                 display:flex;
                 flex-wrap: wrap;
                 flex-direction:row;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 .centerImg {
                     p {
                         width: 300px;
