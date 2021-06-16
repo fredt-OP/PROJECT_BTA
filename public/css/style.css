@@ -221,6 +221,8 @@ header .nav > #nav-check:checked ~ .nav-links {
 }
 
 main {
+  background: #3ed591;
+  background: linear-gradient(17deg, rgba(62, 213, 145, 0.826768) 6%, rgba(15, 231, 217, 0) 100%);
   /*LE CLUB*/
 }
 
@@ -1204,13 +1206,14 @@ main .slider5 .caroussel img {
   float: left;
 }
 
-main .titleTNationaux {
+main .titleNationaux {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 90%;
 }
 
-main .titleTNationaux h2 {
-  width: 90%;
+main .titleNationaux h2 {
   text-align: center;
   font-size: 30px;
   border: 2px solid #548235;
