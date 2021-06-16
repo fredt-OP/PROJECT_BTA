@@ -485,9 +485,14 @@ main .partners .block .instit {
   justify-content: space-evenly;
 }
 
-main .partners .block .instit img {
+main .partners .block .instit a {
   width: 180px;
   margin: 1em;
+  display: flex;
+}
+
+main .partners .block .instit a img {
+  width: 100%;
 }
 
 main .partners .block .sponsors {
@@ -496,9 +501,14 @@ main .partners .block .sponsors {
   justify-content: space-evenly;
 }
 
-main .partners .block .sponsors img {
-  width: 150px;
+main .partners .block .sponsors a {
+  display: flex;
+  width: 180px;
   margin: 1em;
+}
+
+main .partners .block .sponsors a img {
+  width: 100%;
 }
 
 main .disciplines {
@@ -508,6 +518,8 @@ main .disciplines {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 1em;
 }
 
 main .disciplines h2 {
@@ -880,6 +892,8 @@ main .clubPhotos {
   display: flex;
   justify-content: center;
   margin: 1em;
+  margin: 0;
+  padding: 1em;
 }
 
 main .clubPhotos h2 {
