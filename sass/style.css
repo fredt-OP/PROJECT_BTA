@@ -3,6 +3,65 @@
 /*centrer*/
 /*décoration du texte*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  7% {
+    left: 0%;
+  }
+  12% {
+    left: -100%;
+  }
+  19% {
+    left: -100%;
+  }
+  24% {
+    left: -200%;
+  }
+  31% {
+    left: -200%;
+  }
+  36% {
+    left: -300%;
+  }
+  43% {
+    left: -300%;
+  }
+  48% {
+    left: -400%;
+  }
+  55% {
+    left: -400%;
+  }
+  60% {
+    left: -500%;
+  }
+  67% {
+    left: -500%;
+  }
+  72% {
+    left: -600%;
+  }
+  79% {
+    left: -600%;
+  }
+  84% {
+    left: -700%;
+  }
+  91% {
+    left: -700%;
+  }
+  96% {
+    left: -800%;
+  }
+  98% {
+    left: -800%;
+  }
+  100% {
+    left: -900%;
+  }
+}
 @keyframes slidy {
   0% {
     left: 0%;
@@ -62,6 +121,29 @@
     left: -900%;
   }
 }
+@-webkit-keyframes slidy2 {
+  0% {
+    left: 0%;
+  }
+  30% {
+    left: 0%;
+  }
+  35% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  65% {
+    left: -200%;
+  }
+  95% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
+  }
+}
 @keyframes slidy2 {
   0% {
     left: 0%;
@@ -83,6 +165,35 @@
   }
   100% {
     left: -300%;
+  }
+}
+@-webkit-keyframes slidy3 {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
   }
 }
 @keyframes slidy3 {
@@ -127,7 +238,8 @@ header {
 header .background {
   width: 100%;
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
 }
 header .title {
@@ -221,12 +333,14 @@ main .title .divImg {
   max-width: 400px;
 }
 main .title .divImg .imgHall {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 main .title .divImg .imgSalle {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .title .textBienvenue {
   display: flex;
@@ -319,11 +433,7 @@ main .actus .news .actu {
   height: 500px;
   cursor: pointer;
 }
-main .actus .news .actu:hover {
-  -webkit-transform: scale(2); /* Safari et Chrome */
-  -moz-transform: scale(2); /* Firefox */
-  -ms-transform: scale(2); /* Internet Explorer 9 */
-  -o-transform: scale(2); /* Opera */
+main .actus .news .actu:hover { /* Safari et Chrome */ /* Firefox */ /* Internet Explorer 9 */ /* Opera */
   transform: scale(2);
 }
 main .presentation {
@@ -570,7 +680,8 @@ main .createClub .divImg1 img {
   max-width: 337.5px;
   width: 90%;
   height: 350px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0.5em 0;
   border-radius: 0.5em;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1254901961);
@@ -649,7 +760,8 @@ main .local .dflexrow {
 main .local .dflexrow img {
   width: 270.5px;
   height: 320px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0.5em;
   border-radius: 0.5em;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1254901961);
@@ -709,7 +821,8 @@ main .bureau .members .membersfigure img {
   justify-content: center;
   width: 144px;
   height: 170px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.5em 0.5em 0 0;
   border: 2px solid white;
 }
@@ -812,7 +925,8 @@ main .clubPhotos .slider .caroussel {
   padding: 0;
   font-size: 0;
   text-align: left;
-  animation: 49s slidy infinite;
+  -webkit-animation: 49s slidy infinite;
+          animation: 49s slidy infinite;
 }
 main .clubPhotos .slider .caroussel img {
   width: 11.11%;
@@ -852,7 +966,8 @@ main section .slider .caroussel {
   padding: 0;
   font-size: 0;
   text-align: left;
-  animation: 15s slidy2 infinite;
+  -webkit-animation: 15s slidy2 infinite;
+          animation: 15s slidy2 infinite;
 }
 main section .slider .caroussel img {
   width: 11.11%;
@@ -1061,7 +1176,8 @@ main .slider5 .caroussel {
   padding: 0;
   font-size: 0;
   text-align: left;
-  animation: 15s slidy3 infinite;
+  -webkit-animation: 15s slidy3 infinite;
+          animation: 15s slidy3 infinite;
 }
 main .slider5 .caroussel img {
   width: 11.11%;
@@ -1104,7 +1220,8 @@ main .slider4 .caroussel {
   padding: 0;
   font-size: 0;
   text-align: left;
-  animation: 15s slidy3 infinite;
+  -webkit-animation: 15s slidy3 infinite;
+          animation: 15s slidy3 infinite;
 }
 main .slider4 .caroussel img {
   width: 11.11%;
@@ -1193,7 +1310,8 @@ main .location .maps iframe {
   }
   header .background {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     position: relative;
   }
   header .nav > .nav-links {
@@ -1305,7 +1423,8 @@ main .location .maps iframe {
   main .createClub .divImg1 img {
     margin: 2em;
     height: 400px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main .createClub .divImg1 p {
     width: 300px;
@@ -1319,7 +1438,8 @@ main .location .maps iframe {
   main .createClub .divImg2 img {
     margin: 2em;
     height: 387px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main .createClub .divImg2 p {
     width: 300px;
@@ -1327,7 +1447,8 @@ main .location .maps iframe {
   main .local .dflexrow img {
     margin: 1em;
     width: 300px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main .bureau .members .membersfigure {
     width: 280px;
